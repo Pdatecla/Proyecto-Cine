@@ -25,12 +25,10 @@ nav {
     background-color: rgb(160, 4, 4);
     
 }
-
-
 nav ul {
     list-style-type: none;
+    justify-content: space-around;
 }
-
 nav ul li {
     display: inline;
     margin-right: 50px;
@@ -43,7 +41,11 @@ nav a {
     color: rgb(204, 197, 197);
     font-weight: bold;
     text-decoration: none;
-    
+   
+}
+li a:hover{
+	color: black;
+
 }
 
 .seccion {
@@ -136,7 +138,6 @@ h2{
     margin: 10px 0; /* Espacio entre el título y la imagen */
 }
 
-
 /* Estilos para el formulario de reserva */
 form {
     max-width: 400px;
@@ -145,6 +146,8 @@ form {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 label, input, select, button {
     display: block;
@@ -166,4 +169,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+.tarjetas{
+    display:flex;
+    justify-content: space-around;
 }
