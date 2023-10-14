@@ -20,7 +20,7 @@ body {
 nav {
     display: flex;
     justify-content: center; 
-    align-items: justify ;
+    align-items: center ;
     max-width: auto;
     background-color: rgb(160, 4, 4);
     
@@ -58,7 +58,7 @@ nav a {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    height: 100px; /* Ajusta la altura según tus necesidades */
+    height: 100px; /* Ajusta la altura */
 }
 
 .centrar-candybar-grid {
@@ -66,7 +66,7 @@ nav a {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    height: 100px; /* Ajusta la altura según tus necesidades */
+    height: 100px; /* Ajusta la altura */
 }
 
 .centrar-titulos-grid h2 {
@@ -89,7 +89,7 @@ h2{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Espacio entre las fotos y los títulos */
     justify-content: justify; /* Centrar horizontalmente los elementos en el contenedor */
-    align-items: center; /* Centrar verticalmente los elementos en el contenedor */
+    align-items: justify; /* Centrar verticalmente los elementos en el contenedor */
     max-width: 1000px; /* Ancho máximo del contenedor */
     margin: 100 auto; /* Centrar el contenedor en la página */
     padding: 20px; /* Espacio alrededor del contenedor */
@@ -120,6 +120,7 @@ h2{
     max-width: 1200px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centrar el contenedor en la página */
     padding: 20px; /* Espacio alrededor del contenedor */
+    color: #972f2f; /* Color parrafos detalle */
 }
 
 /* Estilos para los elementos individuales (foto + título) */
@@ -148,6 +149,7 @@ form {
 
 label, input, select, button {
     display: block;
+    text-align: left;
     margin-bottom: 10px;
 }
 
@@ -162,7 +164,7 @@ button {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #333;
+    background-color: #5c0202d2;
     color: white;
     text-align: center;
     padding: 10px 0;
