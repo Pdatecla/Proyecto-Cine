@@ -1,1 +1,1 @@
-window.alert("Hola! Soy un script vacio :D");
+window.alert("Reservá ya tu entrada para la próxima función");
