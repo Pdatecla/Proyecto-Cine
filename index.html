@@ -15,8 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Enlace a Font Awesome CSS -->
     
-</head>
+</head> 
 
 <body class="1">
     <h1 style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(143, 141, 141);"></a > CINEMAS </h1>
@@ -242,15 +243,9 @@
 
         <p style="text-align: center; color: brown;">   Información general y datos de contacto </p>
 
-        <div class="tarjetas">
-        <i class="fa fa-cc-mastercard" style="font-size:48px;color:white"></i>
-        <i class="fa fa-cc-amex" style="font-size:48px;color:white"></i>
-        <i class="fa fa-cc-visa" style="font-size:48px;color:white"></i>
-        </div>
     <!--link .JS-->
     <script src="Scripts/main.js"></script>
         
-
         <li><a href="https://www.imdb.com" target="_blank"> Buscar reseñas en IMDB</a></li>
         <li><a href="https://mapa.buenosaires.gob.ar/comollego/comollego/?lat=-34.599444&lng=-58.373752&zl=14&modo=transporte&desde=Terminal+de+%C3%93mnibus+de+Retiro%2C+Terminal&hasta=Chacabuco+400" target="_blank"> Como llegar</a></li>
         </ul>
@@ -271,14 +266,30 @@
         <li><a href="https://www.pinterest.com" target="_blank" class="pinterest-icon external-link-icon" rel="noopener noreferrer">Pinterest<span class="cmp-ul-sr-only"> </span></a></li>
         <li><a href="https://www.facebook.com" title="Link to Knorr AR Facebook page" class="facebook-icon external-link-icon" target="_blank" rel="noopener noreferrer noopener noreferrer">Facebook<span class="cmp-ul-sr-only"></span></a></li>
         </ul>
+
+
+        <h2>SUERENGIAS </h2>  <!-- formularios de Contacto en ,js-->
+        <form id="contactForm">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="14" required></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    
+        <script src="script.js"></script> <!-- Agrega el archivo JavaScript -->
+    
+
     
         <footer> <!-- Incorporar iconos de redes sociales-->
 
             <p>&copy; 2023 Cinemas. Todos los derechos reservados.</p>
             <div class="tarjetas">
-            <i class="fa fa-cc-mastercard" style="font-size:48px;color:white"></i>
-            <i class="fa fa-cc-amex" style="font-size:48px;color:white"></i>
-            <i class="fa fa-cc-visa" style="font-size:48px;color:white"></i>
+            <i class="fa fa-cc-mastercard" style="font-size:48px;color:rgb(141, 137, 137)"></i>
+            <i class="fa fa-cc-amex" style="font-size:48px;color:rgb(141, 137, 137)"></i>
+            <i class="fa fa-cc-visa" style="font-size:48px;color:rgb(141, 137, 137)"></i>
             </div>
         </footer>
         
