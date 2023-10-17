@@ -1,6 +1,6 @@
 window.alert("Reservá ya tu entrada para la próxima función");
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
+document.getElementById('formulariocontacto').addEventListener('submit', function (e) {
     e.preventDefault();
 
     var name = document.getElementById('name').value; 
@@ -11,4 +11,5 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     console.log('Correo electrónico: ' + email);
     console.log('Mensaje: ' + message);
     document.getElementById('contactForm').reset();
+    var formulario = document.getElementById("miFormulario");
 });
