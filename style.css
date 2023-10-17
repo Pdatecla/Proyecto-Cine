@@ -1,14 +1,32 @@
-/* Estilos generales */
+/* Estilos imagen principal */ 
+.portada{
+    background-image: url(imagenes/portada2.png);
+    padding: 10px;
+    width: 100%;
+    height: 15%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textoportada{ 
+    color: #0e0d0d;
+    position: relative;
+    opacity: 25%;
+    top: 150%;
+    left: 70%; 
+    font-size: 60px;
+    font-style: oblique; 
+    font-family: 'Gabarito', italic;
+}
+
+/* Estilos generales */ 
 body {
     font-family: 'Gabarito', sans-serif;
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-    width:100%;
+    width: 100%;
 }
-
-
-
 
 .header {
     background-color: #eb0f0f;
@@ -19,7 +37,6 @@ body {
 }
 
 .header h1 {
-    
     font-size: auto
     }
     
@@ -28,10 +45,10 @@ nav {
     display: flex;
     justify-content: center; 
     align-items: center ;
-    max-width: auto;
+    width: auto;
+    max-width: 100%;
     background-color: rgb(160, 4, 4);
 }
-
 
 nav ul {
     list-style-type: none;
@@ -40,18 +57,19 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 50px;
-    text-align: justify;
+    text-align: justify; 
 }
 
 
 /* estilo para las letras de la barra de opciones */
 nav a {
-    color: rgb(204, 197, 197);
+    color: rgb(117, 116, 116);
     font-weight: bold;
     text-decoration: none ;
+    font-size: 150%;
 }
 nav li a:hover {
-    color: #f15208; /* Cambiar el color con el cursos */
+    color: #ffffff; /* Cambiar el color con el cursos */
 }
 
 .seccion {
@@ -60,13 +78,14 @@ nav li a:hover {
 }
 
 
-/* Estilos para centrar títulos con CSS Grid */
+/*  títulos con CSS Grid */
 .centrar-titulos-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    height: 100px; /* Ajusta la altura */
+    height: 10vw; /* Ajusta la altura */
+    padding: 5%;
 }
 
 .centrar-candybar-grid {
@@ -75,11 +94,13 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     height: 100px; /* Ajusta la altura */
+    font-family: fantasy;
 }
 
 .centrar-titulos-grid h2 {
     margin: 0; /* Elimina el margen predeterminado de los títulos */
     text-align: center; /* Centra el texto dentro de cada título */
+    font-family: fantasy;
 }
 
 
@@ -96,17 +117,15 @@ h2{
 .stylocandybar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
+    gap: 25px; 
     justify-content: justify;  
     align-items: center; 
-    max-width: 1000px;
-    margin: 150 ; 
-    padding: 10%; 
+    max-width: 1200px;
+    margin: 0 ; 
+    padding: 50px; 
 }
-
-/* Estilos para los elementos individuales (foto + título) */
 .item {
-    text-align: center; /* Centrar el contenido en el elemento */
+    text-align: center; 
 }
 
 .item img {
@@ -153,6 +172,35 @@ h2{
 .item h2 {
     margin: 10px 0; /* Espacio entre el título y la imagen */
 }
+.redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Estilos para los elementos individuales   */
+.item {
+    text-align: center;  
+}
+
+.item img {
+    max-width: 50%; 
+    height: auto; 
+}
+
+.item h2 {
+    margin: 1px ; /* Espacio entre el título y la imagen */
+}
+
+
+/* Animacion imagenesr*/
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 2;
+    filter: contrast(120%);
+}
+
 
 /* Estilos para el formulario de reserva */
 form {
@@ -179,6 +227,49 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 20;
+    text-align: center;
+}
+.redes li a {
+    display: block;
+    text-decoration: none;
+    color: #615757;
+}
+
+.redes li span {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding: 1vw;
+}
+
+
+.catalogoonline {
+    display: flex;
+    width: 100%;
+    height: 330px;
+    align-content: center;
+}
+.catalogoonline img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5 ease;
+}
+.catalogoonline img:hover{
+    cursor: crosshair;
+    width: 350px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
 
 /* Estilos para el pie de página */
 footer {
