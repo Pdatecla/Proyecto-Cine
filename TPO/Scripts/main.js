@@ -1,1 +1,0 @@
-window.alert("Reservá ya tu entrada para la próxima función");
