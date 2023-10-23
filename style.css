@@ -273,12 +273,13 @@ button {
 
 
 /* Estilos para el pie de página */
-footer {
+footer{
     background-color: #5c0202d2;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
 
 /*reponsive (modificamos los breackpoints?????????????????)*/ 
 
@@ -311,15 +312,41 @@ footer {
     iframe{display:none;
     }
         br{display:none
+    }
+
+    .textoportada{
+    -webkit-text-stroke: 3px black;
+    left:10px;
+    color: #ffffff;
+    background-color: #093764;
+    }
+
+
+
+nav{
+    padding-left: 1rem;
+    background-color:rgb(129, 125, 125);
+    width:20%;
+    
+    
 }
+nav ul{
+    display:flex;
+    flex-direction: column;
+    
+}
+nav ul li a{
+    color:black;
+}
+
 
     
 }
 
   @media (max-width: 768px) {
-    *{  background-color: #070708;
+    *{ 
         box-sizing: border-box;
-        justify-content:column;
+        
     }
     .textoportada{
         -webkit-text-stroke: 3px black;
@@ -340,19 +367,28 @@ footer {
         width:100%;
         justify-content:column;
     }
-   
-    
-  }
-
-  @media (max-width: 400px) {
-    *{  background-color: #0b0b0c;
-        width:100%
+    nav{
+        
+        background-color:rgb(109, 108, 107);
+        width:40%;
     }
-    .textoportada{
+    nav ul{
+        display:flex;
+        flex-direction: column;
+     }
+    nav ul li a{
+        padding:5px;
+        border-left:2rem;
+        color:black;
+    }
+}
+
+  @media (max-width: 500px) {
+        .textoportada{
         -webkit-text-stroke: 3px black;
         left:10px;
         color: #ffffff;
-        background-color: #093764;
+        background-color: #1680eb;
     }
     h2{
         color: #eb0f0f;
@@ -361,7 +397,25 @@ footer {
         width:100%;
         justify-content:column;
     }
-   }
+
+    nav{
+        background-color:rgb(49, 48, 48);
+        width:50%;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    nav ul li a{
+        color:white;
+        
+    }
+
+    nav li a:hover {
+        color: #635d5d;
+    }
+}
 
 
 
