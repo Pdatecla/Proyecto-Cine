@@ -320,30 +320,22 @@ footer{
     color: #ffffff;
     background-color: #093764;
     }
-
-
-
-nav{
+    nav{
+    box-shadow: 10px 5px 5px rgb(68, 67, 67);
     padding-left: 1rem;
-    background-color:rgb(129, 125, 125);
+    background-color:rgb(179, 174, 174);
     width:20%;
-    
-    
-}
-nav ul{
+    }
+    nav ul{
     display:flex;
     flex-direction: column;
-    
-}
-nav ul li a{
+    }
+    nav ul li a{
     color:black;
+    }
 }
 
-
-    
-}
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     *{ 
         box-sizing: border-box;
         
@@ -368,9 +360,11 @@ nav ul li a{
         justify-content:column;
     }
     nav{
+        width:100%;
+        font-family: 'Palanquin', sans-serif;
+        background-color:rgb(192, 189, 187);
+        box-shadow: 10px 5px 5px rgb(98, 100, 98);
         
-        background-color:rgb(109, 108, 107);
-        width:40%;
     }
     nav ul{
         display:flex;
@@ -383,15 +377,15 @@ nav ul li a{
     }
 }
 
-  @media (max-width: 500px) {
-        .textoportada{
-        -webkit-text-stroke: 3px black;
-        left:10px;
-        color: #ffffff;
-        background-color: #1680eb;
+@media (max-width: 500px) {
+    .textoportada{
+    -webkit-text-stroke: 3px black;
+    left:10px;
+    color: #fcf7f7;
+    background-color: #1680eb;
     }
     h2{
-        color: #eb0f0f;
+        color: #c72c17;
     }
     .stylocandybar{
         width:100%;
@@ -399,8 +393,9 @@ nav ul li a{
     }
 
     nav{
-        background-color:rgb(49, 48, 48);
-        width:50%;
+        font-family: 'Palanquin', sans-serif;
+        background-color:rgb(253, 253, 253);
+        width:100%;
     }
     nav ul{
         display:flex;
@@ -408,7 +403,7 @@ nav ul li a{
         
     }
     nav ul li a{
-        color:white;
+        color:rgb(12, 11, 11);
         
     }
 
