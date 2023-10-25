@@ -154,9 +154,9 @@ h2{
 }
 
 .tarjetas {
+    color:white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 
@@ -248,6 +248,10 @@ button {
     font-size: 15px;
     margin-bottom: 15px;
     padding: 1vw;
+}
+.redes li i:hover{
+    color:white;
+    
 }
 
 

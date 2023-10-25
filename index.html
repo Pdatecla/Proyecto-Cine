@@ -185,13 +185,13 @@
 <hr>
 
     <section  class="seccion">
-    
-        <form id="formulario-reserva" action=""><!-- action enviar un mail o algo ...pendiente!!-->
+    <!-------------- API formspree--------------->
+        <form id="formulario-reserva" action="https://formspree.io/f/xaygvpqv" method="POST">
 
             <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-            <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
+            <label for="email">Correo electrónico:</label>
+                <input  name="email" id="email" type="email" required>
 
             <label for="pelicula">Película:</label>
                 <select id="pelicula" name="pelicula" required>
