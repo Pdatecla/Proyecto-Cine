@@ -189,12 +189,12 @@
         <form id="formulario-reserva" action="https://formspree.io/f/xaygvpqv" method="POST">
 
             <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre">
             <label for="email">Correo electrónico:</label>
-                <input  name="email" id="email" type="email" required>
+                <input  name="email" id="email" type="email">
 
             <label for="pelicula">Película:</label>
-                <select id="pelicula" name="pelicula" required>
+                <select id="pelicula" name="pelicula">
                     <option value="Cartelera"></option>
                     <option value="Cartelera">Avatar</option>
                     <option value="Cartelera">Barbie</option>
@@ -206,7 +206,7 @@
                     <option value="ESTRENOS">Unicornio</option>
                 </select>
                 <label for="Funcion">Funcion:</label>
-                <select id="pelicula" name="pelicula" required>                    
+                <select id="dia-hora" name="pelicula">                    
                     <option value=""></option>
                     <option value="Lunes"> Lunes 18:00 hs</option>
                     <option value="Lunes"> Lunes 22:00 hs </option>
@@ -226,7 +226,7 @@
                     <option value="Domingo">Domingo 23:30 hs</option>
                 </select>
             <label for="cantidad">Cantidad de entradas:</label>
-                <input type="number" id="cantidad" name="cantidad" min="1" required>
+                <input type="number" id="tickets" name="cantidad" min="1">
             
         <p>Reservá tu Candy con 30% de descuento </p>
 
@@ -276,8 +276,10 @@
     </ul>
 </div>
 
+<!--- ESTE FORMULARIO NO FUNCIONA :(
+
 <hr>
-        <h2 style="text-align: center; color: brown;">SUGERENCIAS </h2>  <!-- formularios de Contacto en ,js-->
+        <h2 style="text-align: center; color: brown;">SUGERENCIAS </h2>  
 <hr>
         <form id="formulariocontacto">
             <label for="name">Nombre:</label><br>
@@ -289,6 +291,9 @@
             <input type="submit" value="Enviar">
         </form>
 <hr>
+--->
+
+
     
     <!--link .JS-->
     <script src="Scripts/main.js"></script>

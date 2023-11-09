@@ -1,15 +1,14 @@
-window.alert("Reservá ya tu entrada para la próxima función");
+document.getElementById('formulario-reserva').addEventListener('submit', function (event) {
+    
 
-document.getElementById('formulariocontacto').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var name = document.getElementById('name').value; 
+    var name = document.getElementById('nombre').value; 
     var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+    var movie = document.getElementById('pelicula').value;
+    var date = document.getElementById('dia-hora').value;
+    var tickets = document.getElementById('tickets').value;
 
-    console.log('Nombre: ' + name);
-    console.log('Correo electrónico: ' + email);
-    console.log('Mensaje: ' + message);
-    document.getElementById('contactForm').reset();
-    var formulario = document.getElementById("miFormulario");
-});
+     if (name.trim() === "" || email.trim() === "" || movie.trim() === "" || date.trim() === "" || tickets.trim() === "" ) {
+            alert("Por favor, complete todos los campos obligatorios.");
+            event.preventDefault(); 
+        }
+    });
